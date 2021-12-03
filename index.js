@@ -1,11 +1,16 @@
 const submitButton = document.getElementById('submit-request');
 
 submitButton.onclick = function(e) {
-    const inputData = document.getElementById('input-data').value;
-    console.log(JSON.parse(JSON.parse(inputData)));
-    const outputData = removeTWMetadata(JSON.parse(JSON.parse(inputData)));
-    console.log(JSON.stringify(outputData));
-    document.getElementById('output-data').value = JSON.stringify(outputData);
+
+
+    try {
+        const inputData = document.getElementById('input-data').value;
+        const outputData = removeTWMetadata(JSON.parse(JSON.parse(inputData)));
+        document.getElementById('output-data').value = JSON.stringify(outputData);
+    } catch (e) {
+        document.getElementById('output-data').value = 'An error exists on input variable.' + e.message;
+        logMyErrors(e);
+    }
 }
 
 function removeTWMetadata(jsonObj) {
