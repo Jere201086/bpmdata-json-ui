@@ -8,7 +8,7 @@ submitButton.onclick = function(e) {
         const outputData = removeTWMetadata(JSON.parse(JSON.parse(inputData)));
         document.getElementById('output-data').value = JSON.stringify(outputData);
     } catch (e) {
-        document.getElementById('output-data').value = 'An error exists on input variable.' + e.message;
+        document.getElementById('output-data').value = 'An error exists on input variable. ' + e.message;
         logMyErrors(e);
     }
 }
