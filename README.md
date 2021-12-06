@@ -1,5 +1,6 @@
 # bpmdata-json-ui
 
-### This is another aplication to remove deprecated @Metadata, Selected and items Objects from another BPM data json
+### This is an aplication to remove @Metadata, Items and Selected objects from IBM BPM data json
 
+The intent of this page is related to start new instances, tasks on IBM BPM.
 browse [page](https://jere201086.github.io/bpmdata-json-ui/) to view this working page
