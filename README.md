@@ -8,4 +8,7 @@ browse to the [page](https://jere201086.github.io/bpmdata-json-ui/) to view app 
 ## how-to-use
 
 
-![how-to-use](https://github.com/Jere201086/bpmdata-json-ui/blob/master/getData.gif?raw=true "How to get data!")
+Copy and paste BPM Data object from bpmrest-ui directly to the input field.
+
+
+![image](https://user-images.githubusercontent.com/44485295/162986712-19a96c62-f7e4-4f75-9e57-99e74105dc92.png)
