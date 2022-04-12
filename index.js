@@ -5,11 +5,12 @@ submitButton.onclick = function(e) {
 
     try {
         const inputData = document.getElementById('input-data').value;
-        const outputData = removeTWMetadata(JSON.parse(JSON.parse(inputData)));
+        const json = inputData.substring(1,inputData.length-3);
+        const outputData = removeTWMetadata(JSON.parse(JSON.parse(json)));
         document.getElementById('output-data').value = JSON.stringify(outputData);
     } catch (e) {
         document.getElementById('output-data').value = 'An error exists on input variable. ' + e.message;
-        logMyErrors(e);
+        console.log(e);
     }
 }
 
